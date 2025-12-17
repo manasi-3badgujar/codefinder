@@ -82,9 +82,3 @@ http://localhost:5173
 -Chat stays open until client approves submitted work
 -Read-only chat after project completion
 -Messages aligned by sender with color distinction
-
-📌 Submission Notes
--MongoDB Atlas used for database
--No credentials committed
--Clean folder structure
--Production-ready practices followed
