@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100;
+}
+
+/* ------------------------------
+   BASE STYLES
+--------------------------------*/
+@layer base {
+  body {
+    @apply bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100;
+  }
+}
+
+/* ------------------------------
+   REUSABLE COMPONENT CLASSES
+--------------------------------*/
+@layer components {
+  .input {
+    @apply w-full px-3 py-2 mb-3
+      border border-gray-300
+      rounded-md
+      bg-white text-gray-900
+      focus:outline-none focus:ring-2 focus:ring-indigo-500
+      dark:bg-gray-800 dark:border-gray-700 dark:text-gray-100;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center
+      px-4 py-2
+      rounded-md
+      font-medium
+      bg-indigo-600 text-white
+      hover:bg-indigo-700
+      transition
+      disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .card {
+    @apply bg-white dark:bg-gray-800
+      border border-gray-200 dark:border-gray-700
+      rounded-lg
+      p-4
+      shadow-sm;
+  }
+}
+
+/* ------------------------------
+   UTILITIES
+--------------------------------*/
+@layer utilities {
+  .text-muted {
+    @apply text-gray-500 dark:text-gray-400;
+  }
+}
+
+/* GLOBAL BUTTON FIX */
+/* GLOBAL BUTTON SYSTEM — FIXED SIZE */
+.btn {
+  @apply inline-flex
+         items-center
+         justify-center
+         px-5 py-2
+         rounded-lg
+         font-medium
+         transition
+         whitespace-nowrap
+         shrink-0
+         w-fit
+         max-w-max;
+}
+
+.btn-primary {
+  @apply btn bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.btn-danger {
+  @apply btn bg-red-600 text-white hover:bg-red-700;
+}
+
+.btn-outline {
+  @apply btn border border-gray-300 dark:border-gray-600
+         text-gray-800 dark:text-gray-200
+         hover:bg-gray-100 dark:hover:bg-gray-700;
+}
+
