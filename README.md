@@ -100,6 +100,7 @@ http://localhost:5173
 
 🔐 Authentication & Authorization
 
+<<<<<<< HEAD
 - Secure JWT-based authentication
 
 - Role-based access control (Client, Freelancer, Admin)
@@ -137,3 +138,10 @@ http://localhost:5173
 - RESTful API design
 - Proper error handling and validation
 - Clean folder structure for maintainability
+=======
+💬 Chat System
+-Real-time messaging using Socket.IO
+-Chat stays open until client approves submitted work
+-Read-only chat after project completion
+-Messages aligned by sender with color distinction
+>>>>>>> 0a83db75e3ec516a1df7b82e0164bea60956db1c
