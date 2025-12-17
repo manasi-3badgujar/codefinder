@@ -66,8 +66,6 @@ root
 ├── README.md
 └── .gitignore
 
-yaml
-Copy code
 
 ---
 
@@ -79,97 +77,63 @@ Create a `.env` file inside the `server` directory.
 PORT=6001
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
-⚠️ Important:
-Never commit .env files or sensitive credentials to the repository.
+
 
 ▶️ How to Start & Run the Project
 1️⃣ Start the Backend Server
-bash
-Copy code
+
 cd server
 npm install
 npm run dev
+
 Backend will run at:
 http://localhost:6001
 
 2️⃣ Start the Frontend Application
-bash
-Copy code
+
 cd client
 npm install
 npm run dev
+
 Frontend will run at:
 http://localhost:5173
 
 🔐 Authentication & Authorization
 
-Secure JWT-based authentication
+- Secure JWT-based authentication
 
-Role-based access control (Client, Freelancer, Admin)
+- Role-based access control (Client, Freelancer, Admin)
 
-Protected routes cannot be accessed without login
+- Protected routes cannot be accessed without login
 
-Admins are restricted from deleting their own accounts
+- Admins are restricted from deleting their own accounts
 
-API endpoints are secured using middleware
+- API endpoints are secured using middleware
 
 💬 Real-Time Chat System
-Implemented using Socket.IO
+- Implemented using Socket.IO
 
-Chat is enabled only after a freelancer is assigned to a project
+- Chat is enabled only after a freelancer is assigned to a project
 
-Chat remains active until the client approves submitted work
+- Chat remains active until the client approves submitted work
 
-After project completion, chat becomes read-only
+- After project completion, chat becomes read-only
 
-Messages are aligned and color-coded based on sender
+- Messages are aligned and color-coded based on sender
 
 📌 Core Features
-Role-based dashboards
-
-Project posting and browsing
-
-Project application and tracking
-
-Secure authentication and authorization
-
-Real-time messaging
-
-Admin user and project management
-
-Clean, responsive UI with dark mode
+- Role-based dashboards
+- Project posting and browsing
+- Project application and tracking
+- Secure authentication and authorization
+- Real-time messaging
+- Admin user and project management
+- Clean, responsive UI with dark mode
 
 🧪 Development & Best Practices
-MongoDB Atlas used for cloud database
-
-Modular backend architecture
-
-Reusable React components
-
-RESTful API design
-
-Proper error handling and validation
-
-Clean folder structure for maintainability
-
-📈 Future Enhancements
-Payment gateway integration
-
-Freelancer rating and review system
-
-Email and push notifications
-
-Advanced admin analytics dashboard
-
-Mobile application support
-
-📌 Submission Notes
-No credentials or secrets committed
-
-Project follows production-ready practices
-
-Suitable for academic evaluation and future extension
-
-Built to demonstrate full-stack MERN development concepts
-
-LinkLance provides a secure and structured platform for freelance collaboration, showcasing modern web development using the MERN stack.
+- MongoDB Atlas used for cloud database
+- Modular backend architecture
+- Reusable React components
+- RESTful API design
+- Proper error handling and validation
+- Clean folder structure for maintainability
